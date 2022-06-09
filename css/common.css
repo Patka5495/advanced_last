@@ -1,0 +1,40 @@
+@font-face { font-family: 'Yullyeo'; src: url('../fonts/') format('woff2'),
+ url('../fonts/Yullyeo.woff') format('woff'); font-weight: normal; font-style: normal; font-display: swap; } 
+@font-face { font-family: 'YunB'; src: url('../fonts/YunB.woff2') format('woff2'),
+ url('../fonts/YunB.woff') format('woff'); font-weight: normal; font-style: normal; font-display: swap; } 
+@font-face { font-family: 'Cafe24Ohsquareair'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/Cafe24Ohsquareair.woff') format('woff'); font-weight: normal; font-style: normal; } 
+@font-face { font-family: 'GowunDodum-Regular'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff'); font-weight: normal; font-style: normal; } 
+@font-face { font-family: 'UhBeeRice'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeRice.woff') format('woff'); font-weight: normal; font-style: normal; } 
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+* { margin: 0; padding: 0; box-sizing: border-box; } 
+body{ position: relative; background-image: url(../img/background_pattern.png);}
+#wrap { padding-top: 80px;}
+ol, ul { list-style: none; } 
+a:link, a:hover, a:visited, a:active { text-decoration: none; color: #49333a; } 
+.clear { clear: both; } 
+
+header nav { position: absolute; top: 0; width: 100%; height: 80px; position: fixed; background-color: #e7e8da; overflow: hidden; z-index: 3; } 
+header nav #nav_wrap { position: relative; max-width: 1440px; height: 100%; margin: 0 auto; line-height: 80px; } 
+header nav #nav_wrap #nav_logo { float: left; height: 100%; } 
+header nav #nav_wrap #nav_logo button{visibility: hidden;}
+header nav #nav_wrap #nav_logo #nav_logo_icon { float: left; height: 80px; margin: 8px; } 
+header nav #nav_wrap #nav_logo #nav_title { float: left; height: 60px; margin: 16px; } 
+header nav #nav_wrap #nav_menu { float: right; margin-right: 30px; } 
+header nav #nav_menu ul li.menu_list { display: inline-block; font-family: 'YunB'; font-weight: 100; font-size: 24px; margin-right: 20px; letter-spacing: -5px; } 
+
+footer{position: absolute; bottom: -100px; width: 100%; height: 100px; background-color: black; color: #fff !important;}
+#footer_wrap{ max-width: 1440px; margin: 0 auto;}
+#footer_wrap img {margin-top: 20px; float: left;}
+@media only screen and (max-width: 1024px){
+    #wrap{padding-top: 0;}
+    header nav {position: relative; height: auto; overflow: none;}
+    header nav #nav_wrap #nav_logo{width: 280px; height: 80px; float: none; margin: 0 auto;}
+    header nav #nav_wrap #nav_logo #nav_logo_icon{height: 60px;}
+    header nav #nav_wrap #nav_logo #nav_title{margin-bottom: 0;}
+    header nav #nav_wrap #nav_logo #nav_btn{visibility: visible; transition: background-color .5s ease; width: 30px; height: 30px; background-color: #fff; border: 3px solid #49333a; border-radius: 5px; margin-top: 25px; cursor: pointer;}
+    header nav #nav_wrap #nav_logo #nav_btn:hover{ background-color: rgb(186, 186, 186);}
+    header nav #nav_wrap #nav_menu{ float: none; width: 100%; height: 0; background-color: #e7e8da;}
+    header nav #nav_wrap #nav_menu.active{  float: none; width: 100%; height: auto; background-color: #e7e8da;}
+    header nav #nav_menu ul li.menu_list{display: block; height: 40px; font-size: 20px; text-align: center; margin: 0; line-height: 40px;}
+
+}

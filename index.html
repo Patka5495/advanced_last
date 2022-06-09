@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>무한도전</title>
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="nav_wrap">
+                <div id="nav_logo">
+                    <a href="index.html">                        
+                        <h2 id="nav_logo_icon"><img src="./img/logo_main.svg" height="60px"></h2>
+                        <h2 id="nav_title"><img src="./img/text_logo_main.svg" height="50px"></h2>
+                    </a>
+                    <button id="nav_btn"></button>
+                </div> 
+                <div id="nav_menu">
+                    <ul>
+                        <li class="menu_list"><a href="history.html">역사</a></li>
+                        <li class="menu_list"><a href="member.html">멤버</a></li>
+                        <li class="menu_list"><a href="concert.html">가요제</a></li>
+                        <li class="menu_list"><a href="chase.html">추격전</a></li>
+                        <li class="menu_list"><a href="company.html">무한상사</a></li>
+                        <li class="menu_list"><a href="legeno.html">레전드 특집</a></li>
+                        <li class="menu_list"><a href="nowadays.html">종영 후</a></li>
+                    </ul>
+                </div>               
+            </div>
+        </nav>
+    </header>
+    <section id="main_section">        
+        <section id="welcome_section">
+            <ul>
+                <li><img src="./img/main_logo.svg"></li>
+                <li id="muhan">
+                    <div id="muhan_title">"무한도전"</div>
+                    <div id="muhan_info"><b>Best TV Show Ever</b><br/>나의 최고의 TV 프로그램을 소개합니다.</div>
+                </li>
+            </ul>
+        </section>
+        <div class="clear"></div>
+        <div id="video_background">
+            <div id="video_filter"></div>
+            <video muted autoplay loop>
+                <source src="./video/opening.mp4" type="video/mp4">
+                <strong>Your browser does not support the video tag.</strong>
+            </video>
+        </div>
+    </section>
+    <script src="./js/common.js"></script>
+</body>
+</html>

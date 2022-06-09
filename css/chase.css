@@ -1,0 +1,22 @@
+#wrap{ position: relative; max-width: 1920px; height: 4000px; margin: 0 auto;}
+h2{ text-align: center; margin: 70px auto; font-family: 'UhBeeRice'; font-size: 40px;}
+.chase_layout.left{ position: relative; margin-right: calc(84% - 1092px); margin-left: auto;}
+.chase_layout.right{ position: relative; margin-left: calc(84% - 1092px); margin-right: auto;}
+#moneybag{ top: 100px;}
+#break{top: 400px;}
+#tail{ top: 700px;}
+#brother{ top: 1000px;}
+#become{ top: 1300px;}
+.chase_layout .chase_info {position: absolute; left: 850px; width: 500px; bottom: 30px;}
+.chase_layout .chase_info .chase_title{ font-family: 'Cafe24Ohsquareair'; font-weight: bold; font-size: 50px;  margin-bottom: 20px;}
+.chase_layout .chase_info .chase_description{font-family: 'GowunDodum-Regular'; font-size: 16px; }
+.chase_layout #under_line {width: 1400px; height: 1px; background-color: #000; margin-top: 20px;}
+
+@media only screen and (max-width: 1024px) {
+    #wrap{height: auto;}
+    .chase_layout #under_line {height: 0px; background-color: none;}
+    #moneybag, #break, #tail, #brother, #become {top: 0;}
+    .chase_layout.left, .chase_layout.chase_layout.right{margin: 0; margin-top: 200px;}
+    .chase_layout.left img, .chase_layout.right img{width: 100%;}
+    .chase_layout .chase_info{position: relative; left: 0; bottom: 0; margin-top: 20px; width: 100%;}
+}

@@ -1,0 +1,33 @@
+
+#wrap h2 { font-family: 'UhBeeRice'; font-size: 36px; text-align: center; margin: 50px auto; } 
+
+#history_section { position: relative; max-width: 1920px; margin: 0 auto; } 
+#history_section #center_line { background-color: #000; width: 1px; height: 3000px; margin: 0 auto; } 
+
+#history_section .history_layout { position: absolute; width: 100%; } 
+#history_section #muri_section { top: 100px; } 
+#history_section #mumo_section { top: 800px; } 
+#history_section #mudo_section1 { top: 1500px; } 
+#history_section #mudo_section2 { top: 2200px; } 
+
+#history_section .history_layout.left .img_layout { position: relative; max-width: 800px; margin-right: calc(50% + 50px); margin-left: auto; } 
+#history_section .history_layout.right .img_layout { position: relative; max-width: 800px; margin-left: calc(50% + 50px); margin-right: auto; } 
+#history_section .history_layout .img_layout ul li img { box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.467); border: 4px solid white; border-radius: 5%; } 
+#history_section .history_layout .img_layout ul li:nth-child(1) { position: relative; width: 350px; margin: 0 auto; z-index: 2; } 
+#history_section .history_layout .img_layout ul li:nth-child(2) { position: absolute; width: 300px; top: 10%; left: 0; } 
+#history_section .history_layout .img_layout ul li:nth-child(3) { position: absolute; width: 300px; top: 10%; right: 0; } 
+#history_section .history_layout.left .history_description_section { position: relative; margin-top: 50px; text-align: right; max-width: 600px; margin-right: calc(50% + 50px); margin-left: auto; } 
+#history_section .history_layout.right .history_description_section { position: relative; margin-top: 50px; text-align: left; max-width: 600px; margin-left: calc(50% + 50px); margin-right: auto; } 
+#history_section .history_layout .history_description_section .history_title { font-family: 'Cafe24Ohsquareair'; font-weight: bold; font-size: 36px; font-style: italic; margin-bottom: 20px; } 
+#history_section .history_layout .history_description_section .history_description { font-family: 'GowunDodum-Regular'; font-size: 20px; line-height: 120%; } 
+@media only screen and (max-width: 1024px) {
+    #history_section #center_line{
+        visibility: hidden;
+    }
+    #history_section .history_layout.left .img_layout, #history_section .history_layout.right .img_layout {
+        width: 100%; margin-right: auto; margin: 0 auto;
+    }
+    #history_section .history_layout.left .history_description_section, #history_section .history_layout.history_layout.right .history_description_section{
+        position: relative; width: 100%; margin: auto; text-align: center; padding-top: 50px;
+    }
+}

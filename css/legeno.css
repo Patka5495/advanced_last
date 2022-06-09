@@ -1,0 +1,15 @@
+#wrap{ max-width: 1440px; min-width: 1400px; margin: 0 auto; height: 100%;}
+h2{ text-align: center; margin: 100px auto; font-family: 'UhBeeRice'; font-size: 40px;}
+.legeno_layout{max-width: calc((100% - 40px) / 2); margin-right: 2%; float: left; margin-bottom: 200px;}
+.legeno_layout.right{margin-right: 0;}
+.legeno_layout .legeno_info{ width: 100%; text-align: center;}
+.legeno_layout .legeno_info .legeno_title{font-family: 'Cafe24Ohsquareair'; font-size: 30px; margin: 20px auto; font-weight: bold;}
+.legeno_layout .legeno_info .legeno_description{font-family: 'GowunDodum-Regular'; font-size: 20px;}
+
+@media only screen and (max-width: 1024px){
+    #wrap{ min-width: 0; width: 100%;}
+    iframe {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+    .youtube_wrap{position: relative; width: 100%; height: auto; padding-top: 50%}
+    .legeno_layout{max-width: 100%; margin: 0;}
+    .legeno_layout .legeno_info{margin: 50px 0;}
+}

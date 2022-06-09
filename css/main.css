@@ -1,0 +1,32 @@
+body {overflow-y: hidden; } 
+
+a:link, a:hover, a:visited, a:active { text-decoration: none; color: #ffffff; } 
+header nav { position: absolute; top: 0; width: 100%; height: 80px; position: fixed; background-color: #000000; overflow: hidden; z-index: 3; } 
+
+#main_section { /* margin-top: 110px; */ height: 100vh;  } 
+#main_section #welcome_section { margin:0 auto; padding-top: 35vh;  max-width: 1000px;} 
+#main_section #welcome_section ul{ margin: auto; display: block;}
+#main_section #welcome_section ul li{ color: #fff;  width: 50%; float: left;}
+#main_section #welcome_section ul #muhan{ padding-left: 50px;}
+
+#main_section #welcome_section ul #muhan #muhan_title{font-family: 'UhBeeRice'; font-size: 48px; margin-top: 100px;}
+#main_section #welcome_section ul #muhan #muhan_info {font-family: 'GowunDodum-Regular'; font-size: 24px;}
+/* #main_section #welcome_section ul li img {  }  */
+
+#main_section #video_background { height: 140vh; width: 100%; position: absolute; top: 0; z-index: -3; } 
+#main_section #video_background #video_filter { position: absolute; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.471); } 
+#main_section #video_background video { position: absolute; top: 0; min-width: 1920px; min-height: 1080px; width: 100%; z-index: -4; } 
+
+@media only screen and (max-width: 1024px){
+    #wrap{padding-top: 0;}
+    header nav {position: relative; height: auto; overflow: none;}
+    header nav #nav_wrap #nav_logo{width: 280px; height: 80px; float: none; margin: 0 auto;}
+    header nav #nav_wrap #nav_logo #nav_logo_icon{height: 60px;}
+    header nav #nav_wrap #nav_logo #nav_title{margin-bottom: 0;}
+    header nav #nav_wrap #nav_logo #nav_btn{visibility: visible; transition: background-color .5s ease; width: 30px; height: 30px; background-color: #fff; border: 3px solid #49333a; border-radius: 5px; margin-top: 25px; cursor: pointer;}
+    header nav #nav_wrap #nav_logo #nav_btn:hover{ background-color: rgb(186, 186, 186);}
+    header nav #nav_wrap #nav_menu{ float: none; width: 100%; height: 0; background-color: #000;}
+    header nav #nav_wrap #nav_menu.active{  float: none; width: 100%; height: auto; background-color: #000;}
+    header nav #nav_menu ul li.menu_list{display: block; height: 40px; font-size: 20px; text-align: center; margin: 0; line-height: 40px;}
+
+}

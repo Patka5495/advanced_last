@@ -1,0 +1,25 @@
+#wrap{height: 1000px;}
+.img_set{ position: relative; width: 875px; height: 548px; margin: 0 auto; text-align: center; margin-top: 50px;}
+.img_set .muhan_company { position: relative; width: 875px; height: 548px; text-align: center; margin: 0 auto; overflow: hidden;}
+.img_set .muhan_company img{ position: absolute; top: 0; left: 0; transition: left 0.5s ease;}
+#h3_container{ position: relative; height: 78px; font-family: 'UhBeeRice'; font-size: 40px; margin: 50px auto; text-align: center;}
+h3{position: absolute; transform:translate(-50%, 0%); left: 50%; visibility: hidden;}
+h3.active{visibility: visible;}
+h3.company_info.active{visibility: hidden;}
+.img_set button { border: 1px solid #000; width: 60px; height: 100px; z-index: 2; background-color: #fff; color: #000; border-radius: 20px; cursor: pointer; transition: 0.5s ease;}
+.img_set button:hover{background-color: #000; color: #fff;}
+.img_set #prev_btn{transform:translate(-80%, -50%); position: absolute; left: 0; top: 50%;}
+.img_set #next_btn{transform:translate(80%, -50%); position: absolute; right: 0; top: 50%;}
+
+.company_info{ font-family: 'GowunDodum-Regular'; font-size: 20px; position: absolute; bottom: -100px; max-width: 1000px; margin: 0 auto; opacity: 0;}
+.company_info.active{ animation: textMotionIn forwards ease .7s;}
+.company_info.inactive{animation: textMotionOut forwards ease-in-out .7s;}
+
+@keyframes textMotionIn{
+    from{bottom: -100px; opacity: 0;}
+    to{ bottom: -70px ; opacity: 1;}
+}
+@keyframes textMotionOut{
+    from{bottom: -70px; opacity: 1;}
+    to{ bottom: -40px ; opacity: 0;}
+}
